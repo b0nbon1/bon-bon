@@ -310,10 +310,10 @@
 $(function(){
 
         $("#typed").typed({
-            strings: ["b0n:~/dev$ Hi, I'm Bonvic Bundi alias Bonbon a 3rd year student, UI/UX designer, and aspiring fullstack developer. I've been programming for two months now.  I can also speak 3 different languages: English, Kiswahili and Deutch.",
-                        "b0n:~/dev$ My portofolio website is coming soon be checking, Thanks for clicking enjoy your valentines💘💕💓"],
-            typeSpeed: 30,
-            backDelay: 500,
+            strings: ["b0n:~/dev$ Hi, I'm Bonvic Bundi alias Bonbon a 3rd year student , UI/UX designer, and aspiring fullstack developer. I've been programming for two months now.  I'm good in these programming languages: Python, HTML5, CSS3, JavaScript.",
+                        "b0n:~/dev$ My portofolio website is coming soon so be on the lookout. Thanks for checking this one out. Enjoy your Day!.", "b0n:~/dev$ PLEASE DON'T FORGET TO CLICK ON THE ICONS BELOW", "b0n:~/dev$ Tschüss!!"],
+            typeSpeed: 100,
+            backDelay: 1000,
             loop: true,
             // defaults to false for infinite loop
             loopCount: false,
