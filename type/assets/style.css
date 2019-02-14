@@ -3,22 +3,37 @@ body
   background: url('images/pQT0l.gif');
   background-repeat: no-repeat;
   background-position: center;
+   background-size: cover;
   height: 100vh;
   color: #fff;
+  padding: 20px;
 }
 /*==============================================================
 text editor styling
 ==============================================================*/
 .terminal
 {
+  /*position: fixed;*/
   opacity: 0.9;
   padding: 10px;
   background: black;
   margin: auto;
   max-width: 530px;
- height: 90vh;
+ height: 40vh;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 20px 70px;
+}
+.terminal .head
+{
+  width: 100%;
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: grey;
+  color: white;
+  font-family: 'VT323', monospace;
+  text-align: center;
 }
 /* Code for animated blinking cursor. */
 .typed-cursor {
@@ -67,4 +82,31 @@ text editor styling
   color: #14c900;
   font-size: 1.5em;
   opacity: 1;
+}
+footer
+{
+  opacity: 0.9;
+  padding: 10px;
+  background: black;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.fab
+{
+  margin-left: 10px;
+  font-size: 50px;
+  color: #14c900;
+}
+fab:hover
+{
+  color: white;
+}
+#bon
+{
+  float: right;
+  font-size: 10px;
+  text-decoration: none;
 }
