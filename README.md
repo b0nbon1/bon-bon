@@ -5,3 +5,9 @@ themes, small projects and games
  
  ## second project:
   * google   [google-homepage](https://b0nbon1.github.io/bon-bon/google-homepage/)
+
+ ## Third project:
+  * Digital Clock   [Digitalclock](https://b0nbon1.github.io/bon-bon/Digitalclock/)
+
+## Fourth project:
+  * Note Manger   [NoteManger](https://b0nbon1.github.io/bon-bon/Notemanager/)
