@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/main.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        RUN.
+      </div>
+      <div class="sidebar-items active" style="margin-top: 5rem;">
+        <object type="image/svg+xml" data="./resources/images/icons/electronics.svg" class="side-icon"> lightening icon</object>
+      </div>
+      <div class="sidebar-items">
+        <object type="image/svg+xml" data="./resources/images/icons/interface.svg" class="side-icon"> lightening icon</object>
+      </div>
+      <div class="sidebar-items">
+        <object type="image/svg+xml" data="./resources/images/icons/credit-card.svg" class="side-icon"> lightening icon</object>
+      </div>
+      <div class="sidebar-items">
+        <object type="image/svg+xml" data="./resources/images/icons/symbol.svg" class="side-icon"> lightening icon</object>
+      </div>
+    </aside>
+
+    <div class="container-fluid">
+
+      <main class="main">
+
+        <div class="heading">
+          <div class="welcome-note">
+            <h1>Hello, Max 👋</h1>
+            <h6>Here is your daily statistics</h6>
+          </div>
+          <div class="calendar">
+            <span style="margin-right: .5rem; letter-spacing: 2px;">9<sup>th</sup> May 2020</span>
+            <object type="image/svg+xml" data="./resources/images/icons/calendar.svg" class="side-icon">calendar</object>
+          </div>
+        </div>
+
+        <!-- start cards -->
+  
+        <div class="cards">
+          <div class="card-stats heart">
+            <div class="stats">
+              <p>
+                <span style="color: #fd7575; margin-right: 10px;">Heart</span>
+                <object type="image/svg+xml" data="./resources/images/icons/love-and-romance.svg">heart</object>
+              </p>
+              <div class="stats-numbers">
+                <h4>119</h4>
+                <h6>bpm</h6>
+              </div>
+            </div>
+            <div class="stats-percent">
+              <div style="height: 82%; background-color: #4fd376;">
+                <h5>89%</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-stats running">
+            <div class="stats">
+              <p>
+                <span style="color: #47af66; margin-right: 10px;">Running</span>
+                <object type="image/svg+xml" data="./resources/images/icons/running.svg">running</object>
+              </p>
+              <div class="stats-numbers">
+                <h4>3043</h4>
+                <h6>m</h6>
+              </div>
+            </div>
+            <div class="stats-percent">
+              <div style="height: 50%; background-color: #07cfcf;">
+                <h5>39%</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-stats calories">
+            <div class="stats">
+              <p>
+                <span style="color: #ffc506; margin-right: 10px;">Calories</span>
+                <object type="image/svg+xml" data="./resources/images/icons/fire.svg">Calories</object>
+              </p>
+              <div class="stats-numbers">
+                <h4>301</h4>
+                <h6>Kcl</h6>
+              </div>
+            </div>
+            <div class="stats-percent">
+              <div style="height: 36%; background-color: #7c7c7c;">
+                <h5>19%</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end cards -->
+
+        <!-- Charts -->
+        <div class="chart-container">
+          <div class="activity-chart">
+            <div class="activity-headings">
+              <h2>Activity</h2>
+              <p>
+                <span class="pilates">Pilates</span>
+                <span class="aero">Aerobics</span>
+                <span class="boxer">Box</span>
+              </p>
+            </div>
+            <div class="chart">
+              <div class="y-axis-numbers">
+                <p>120</p>
+                <p>90</p>
+                <p>60</p>
+                <p>30</p>
+                <p>0</p>
+                <p></p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 7;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                </div>
+                <p class="x-axis">10</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 4;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                  <div style="flex-grow: 4;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">11</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 2;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">12</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 7;" class="bar-1"></div>
+                  <div style="flex-grow: 2;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">13</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 2;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">14</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 5;" class="bar-1"></div>
+                  <div style="flex-grow: 4;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">15</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 5;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-3"></div>
+                  <div style="flex-grow: 1;" class="bar-4"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">16</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 2;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">17</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 5;" class="bar-1"></div>
+                  <div style="flex-grow: 5;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">18</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 5;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-3"></div>
+                  <div style="flex-grow: 1;" class="bar-4"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">19</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 2;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">20</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 5;" class="bar-1"></div>
+                  <div style="flex-grow: 5;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">21</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 2;" class="bar-1"></div>
+                  <div style="flex-grow: 1;" class="bar-2"></div>
+                  <div style="flex-grow: 6;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">22</p>
+              </div>
+              <div class="bars">
+                <div class="bar">
+                  <div style="flex-grow: 5;" class="bar-1"></div>
+                  <div style="flex-grow: 5;" class="bar-3"></div>
+                </div>
+                <p class="x-axis">23</p>
+              </div>
+            </div>
+            <!-- no -->
+          </div>
+          <div class="goals">
+            <h3>You done today's goals</h3>
+            <div class="progress-box">
+              100%
+            </div>
+          </div>
+        </div>
+        <!-- end Charts -->
+        <div class="location">
+          <div class="distance">
+            <h6>Running</h6>
+            <div class="running-details">
+            <div>
+              <h3>6.43 km</h3>
+              <p>Distance</p>
+            </div>
+            <div>
+              <h3>7.51 min</h3>
+              <p>Ride time</p>
+            </div>
+          </div>
+          </div>
+          <img src="./resources/images/map-placeholder-768x406.jpg" alt="map" width="100%" height="250" style="border-radius: 20px;">
+        </div>
+
+      </main>
+
+      <aside class="right-sidebar">
+        <div class="sidebar-heading">
+          <div class="heading-icons">
+            <div style="margin-left: 0;" class="icons">
+              <div class="notification"></div>
+              <object type="image/svg+xml" data="./resources/images/icons/music-and-multimedia.svg">notifications</object>
+            </div>
+            <div class="icons">
+              <object type="image/svg+xml" data="./resources/images/icons/message.svg">messages</object>
+            </div>
+          </div>
+          <div class="user">
+            <h3>Max Miles</h3>
+            <img src="./resources/images/max.webp" style="border-radius: 7px;" height="32" width="32" alt="user">
+          </div>
+        </div>
+        <div class="today">
+          <h3>Today</h3>
+          <img height="15" width="15" src="./resources/images/icons/cale.svg" alt="icon calendar">
+        </div>
+        <div class="cards-side-container">
+          <div class="active-cards-side">
+            <div style="width: 90%;" class="card-side">
+              <div class="activity">
+                <h3>Aerobics</h3>
+                <h6>Violena Aerobic club</h6>
+              </div>
+              <div class="timer">
+                <img src="./resources/images/icons/clock.svg">
+                <h5>08:30</h5>
+                <h6>09:30</h6>
+              </div>
+            </div>
+            <div class="active-time"><span>:</span></div>
+          </div>
+          <div class="cards-side pilates">
+            <div class="activity">
+              <h3>Pilates</h3>
+              <h6>Lady Fit</h6>
+            </div>
+            <div class="timer">
+              <img src="./resources/images/icons/clock.svg">
+              <h5>09:30</h5>
+              <h6>10:30</h6>
+            </div>
+          </div>
+          <div class="cards-side boxer">
+            <div class="activity">
+              <h3>Box</h3>
+              <h6>Sport Club Matrix</h6>
+            </div>
+            <div class="timer">
+              <img src="./resources/images/icons/clock.svg">
+              <h5>12:30</h5>
+              <h6>13:30</h6>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-title">
+          <h3>Top Trainer</h3>
+          <img src="./resources/images/icons/shapes-and-symbols.svg" height="15" width="15">
+        </div>
+        <div class="trainers">
+          <div class="trainer">
+            <img class="trainer-pic" src="./resources/images/guy-3.jpg">
+            <div class="trainer-skills">
+              <h4>Terry crews</h4>
+              <h5>Fitness</h5>
+            </div>
+            <div class="stars">
+              <img width="15px" height="15px" src="./resources/images/icons/star.svg">
+              <h5>3.5</h5>
+            </div>
+            <div>
+              <img class="social-icon" src="./resources/images/icons/fb.svg">
+              <img class="social-icon" src="./resources/images/icons/twitter.svg">
+            </div>
+          </div>
+          <div class="trainer">
+            <img class="trainer-pic" src="./resources/images/guy-1.jpg">
+            <div class="trainer-skills">
+              <h4>Ted Nguyen</h4>
+              <h5>Cross fit</h5>
+            </div>
+            <div class="stars">
+              <img width="15px" height="15px" src="./resources/images/icons/star.svg">
+              <h5>3.7</h5>
+            </div>
+            <div>
+              <img class="social-icon" src="./resources/images/icons/fb.svg">
+              <img class="social-icon" src="./resources/images/icons/twitter.svg">
+            </div>
+          </div>
+          <div class="trainer">
+            <img class="trainer-pic" src="./resources/images/guy-2.jpg">
+            <div class="trainer-skills">
+              <h4>Gwen New</h4>
+              <h5>Yoga</h5>
+            </div>
+            <div class="stars">
+              <img width="15px" height="15px" src="./resources/images/icons/star.svg">
+              <h5>4.5</h5>
+            </div>
+            <div>
+              <img class="social-icon" src="./resources/images/icons/fb.svg">
+              <img class="social-icon" src="./resources/images/icons/twitter.svg">
+            </div>
+          </div>
+          <div class="trainer">
+            <img class="trainer-pic" src="./resources/images/guy-4.jpg">
+            <div class="trainer-skills">
+              <h4>Veronica Young</h4>
+              <h5>Pole dance</h5>
+            </div>
+            <div class="stars">
+              <img width="15px" height="15px" src="./resources/images/icons/star.svg">
+              <h5>4.2</h5>
+            </div>
+            <div>
+              <img class="social-icon" src="./resources/images/icons/fb.svg">
+              <img class="social-icon" src="./resources/images/icons/twitter.svg">
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>

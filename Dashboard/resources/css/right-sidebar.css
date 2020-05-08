@@ -1,0 +1,221 @@
+.right-sidebar {
+  padding: 2rem;
+  width: 20%;
+}
+
+.sidebar-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heading-icons {
+  display: flex;
+}
+
+.heading-icons .icons {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: .9rem;
+  background-color: #bedbf58f;
+  cursor: pointer;
+}
+
+.notification {
+  position: absolute;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background-color: #f739a8e0;
+  right: -1px;
+  top: -1px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user h3 {
+  font-weight: 500;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.today {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.3rem 0;
+}
+
+.active-cards-side::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  left: -3px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+}
+
+.active-cards-side {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.card-side {
+  display: flex;
+  background-color: #f0f8ff;
+  height: 100%;
+  width: 90%;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.active-time {
+  height: 100%;
+  width: 23%;
+  margin-left: -35px;
+  border-radius: 15px;
+  z-index: -5;
+  background-color: var(--primary);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 900;
+  font-size: larger;
+  color: #f0f8ff;
+}
+
+.active-time span {
+  margin-right: 10px;
+}
+
+.cards-side {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.cards-side::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  margin-left: -1.2rem;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.pilates::before {
+  background-color: var(--purplish);
+}
+
+.boxer::before {
+  background-color: var(--coral);
+}
+
+.activity h3 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.activity h6 {
+  font-size: 11px;
+  color: var(--text-grey);
+}
+
+.timer {
+  background-color: #bedbf58f;
+  padding: 10px;
+  border-radius: 18px;
+  position: relative;
+  text-align: center;
+}
+
+.timer img {
+  position: absolute;
+  left: -5px;
+  top: 40%;
+}
+
+.timer h5 {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.trainer-title h6 {
+  font-size: 10px;
+  color: var(--text-grey);
+}
+
+.trainer-title {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: .5px solid #c7c7c7;
+} 
+
+.trainer h3 {
+  font-weight: 600;
+}
+
+.trainer-pic {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+img.social-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #f0f8ff;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.trainer-skills, .stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.trainer-skills h4 {
+  font-size: 12px;
+}
+.trainer-skills h5 {
+  font-size: 10px;
+  color: var(--text-grey);
+}
+
+.stars h5 {
+  font-size: 12px;
+}
