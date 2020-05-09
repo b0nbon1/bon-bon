@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/main.css">
+  <title>Stackoverflow</title>
+  <style></style>
+</head>
+
+<body>
+  <div class="loading-bar">
+    <div class="indeterminate"></div>
+  </div>
+  <div>
+    <nav class="navbar">
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fa fa-bars"></i>
+      </label>
+      <a href="#" class="logo">LOGO</a>
+      <input type="checkbox" id="chkToggle"></input>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="#" class="nav-links">HOME</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">ASK</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">TOPICS</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">DISCOVER</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">
+            <button type="button" class="btn-login">LOGIN</button>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <div class="search">
+        <div class="banner">
+          <h1>Ask a Question?</h1>
+          <h5>You can ask your question/ post on our community by providing all the required details.</h5>
+        </div>
+        <form id="search" class="search-bar">
+          <input name="searchInput" class="search-field" type="text" placeholder="Search anything">
+          <button class="advance-search" id="advance-search-btn" type="button">
+            Advanced Search
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </button>
+          <button type="submit" class="btn-search">Search</button>
+        </form>
+      </div>
+      <div id="search-results" class="search-results">
+      </div>
+      <div id="paginate" class="content_detail__pagination cdp" actpage="1"></div>
+    </div>
+    <div id="modal-form" class="modal">
+      <div class="modal-content">
+        <div class="modal-title">
+          <h1>Advance Search</h1>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form class="modal-form" id="search-advanced">
+            <div class="form-search-modal">
+              <div class="form-group-search">
+                <label for="search-term">search</label>
+                <input class="input-search" type="text" name="SearchTerm" id="search-term"
+                  placeholder="Search anything">
+              </div>
+              <div class="form-group-search">
+                <label for="accepted">accepted Question only</label>
+                <select class="select-search" id="accepted">
+                  <option></option>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="answers">minimum number of answers</label>
+                <input class="input-search" type="number" name="answers" min="1" max="1000" id="answers">
+              </div>
+              <div class="form-group-search">
+                <label for="body">Text that must be in the body</label>
+                <input class="input-search" type="text" name="body" id="body" body>
+              </div>
+              <div class="form-group-search">
+                <label for="closed">Closed Questions only</label>
+                <select name="closed" class="select-search" id="closed">
+                  <option></option>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="migrated">Migrated away from Site</label>
+                <select name="migrated" class="select-search" id="migrated">
+                  <option value=""></option>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="notice">Questions with post notices</label>
+                <select name="notice" class="select-search" id="notice">
+                  <option value=""></option>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="nottagged">Exclude Tags</label>
+                <input class="input-search" type="text" name="nottagged" id="nottagged" placeholder="separate tags with comma">
+              </div>
+              <div class="form-group-search">
+                <label for="tagged">Include Tags</label>
+                <input class="input-search" type="text" name="tagged" id="tagged"  placeholder="separate tags with comma">
+              </div>
+              <div class="form-group-search">
+                <label for="title">Question Tiltes</label>
+                <input class="input-search" type="text" name="title" id="title">
+              </div>
+              <div class="form-group-search">
+                <label for="user">User Id of the Question</label>
+                <input class="input-search" type="number" min="1" name="user" id="user">
+              </div>
+              <div class="form-group-search">
+                <label for="url">Url of the Question</label>
+                <input class="input-search" type="url" name="url" id="url">
+              </div>
+              <div class="form-group-search">
+                <label for="views">Minimum number of Views</label>
+                <input class="input-search" type="text" name="views" id="views">
+              </div>
+              <div class="form-group-search">
+                <label for="wiki">Community wiki questions Only</label>
+                <select name="wiki" class="select-search" id="wiki">
+                  <option value=""></option>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="order">Order Questions</label>
+                <select name="order" class="select-search" id="order">
+                  <option value="desc">desc</option>
+                  <option value="asc">asc</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="sort">Sort</label>
+                <select name="sort" class="select-search" id="sort">
+                  <option value="votes">Votes</option>
+                  <option value="activity">Activity</option>
+                  <option value="creation">Creation</option>
+                  <option value="relevance">Relevance</option>
+                </select>
+              </div>
+              <div class="form-group-search">
+                <label for="from-date">From Date</label>
+                <input class="input-search" type="date" name="fromdate" id="from-date">
+              </div>
+              <div class="form-group-search">
+                <label for="to-date">To date</label>
+                <input class="input-search" type="date" name="todate" id="to-date">
+              </div>
+              <div class="form-group-search">
+                <label for="pagesize">Page Size</label>
+                <input class="input-search" type="number" min="1" max="20" name="pagesize" id="pagesize">
+              </div>
+              <div class="form-group-search">
+                <label for="page">Page</label>
+                <input class="input-search" min="1" type="number" name="page" id="page">
+              </div>
+            </div>
+            <div class="advance-search-buttons">
+              <button class="advanced-search-submit" type="submit">Search</button>
+              <button class="advanced-search-cancel"  type="button">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./resources/js/index.js"></script>
+</body>
+
+</html>
